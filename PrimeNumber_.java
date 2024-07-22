@@ -5,38 +5,31 @@
 */
 import java.util.Scanner;
 
-class PrimeNumber 
+class PrimeNumber_ 
 {
 	public static boolean isPrime(int num)
 	{
 		int count=2;
-		for (int i=2;i<=num/2 ;i++ )
+		for (int i=2;i<=num ;i++ )
 		{
 			if (num%i==0)
-			count++;
+			{
+				count++;
+			}
 		}
 		return count==2;
 	}
 	public static void main(String[] args)
 	{
-		//Scanner input=new Scanner(System.in);
-		//int num=input.nextInt();
-		/*if (isPrime(num))
+		Scanner input=new Scanner(System.in);
+		int num=input.nextInt();
+		if (isPrime(num))
 		{
 			System.out.println("It is a Prime Number..");
 		}
 		else
 		{
 			System.out.println("It is a Not Prime Number..");
-		}*/
-		for (int i=10;i<=20/2 ;i++ )
-		{
-			//int find=0;
-			if (isPrime(i))
-			{
-				System.out.println(i+"");
-			}
-			
 		}
 	}
 }
