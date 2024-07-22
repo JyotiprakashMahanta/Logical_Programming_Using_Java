@@ -1,29 +1,17 @@
-import java.util.*;
+import java.util.Scanner;
 class Vowel_Consonant 
 {
 	public static void main(String[] args) 
 	{
-		Scanner sc=new Scanner(System.in);
-		System.out.print("Enter a character: ");
-		char c=sc.next().charAt(0);
-
-		/*if(c=='a' | c=='e' | c=='i' | c=='o' | c=='u'){
-			System.out.println(c+" is vawel");
+		Scanner cs=new Scanner(System.in);
+		System.out.println("Enter a chracter: ");
+		char c=cs.next().charAt(0);
+		char ch=Character.toLowerCase(c);
+		if (ch=='a' ||ch=='e' ||ch=='i' ||ch=='o' ||ch=='u')
+		{
+			System.out.println(ch+" is a vowel");
 		}else{
-			System.out.println(c+" is consonant");
-		} */
-		//System.out.println("Hello World!");
-
-		switch(c){
-			case 'a':
-			case 'e':
-			case 'i':
-			case 'o':
-			case 'u':
-			System.out.println("c+" is consonant");
-			break;
-		default :
-			System.out.println("c+" is consonant");
+			System.out.println(ch+" is a consonat");
 		}
 	}
 }
