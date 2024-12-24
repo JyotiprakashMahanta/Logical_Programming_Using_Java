@@ -1,16 +1,16 @@
 package Number_Program;
 
-public class ReverseNumber {
+public class ProductofDigit {
 
 	public static void main(String[] args) {
-		int num=900101;
-		int rev=0;
+		int num=1110;
+		int product=1;
 		while (num!=0) {
 			int digit=num%10;
-			rev=rev*10+digit;
+			product*=digit;
 			num/=10;
 		}
-		System.out.println(rev);
+		System.out.println(product);
 	}
 
 }

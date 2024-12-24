@@ -1,16 +1,16 @@
 package Number_Program;
 
-public class ReverseNumber {
+public class FindEvenNumber {
 
 	public static void main(String[] args) {
-		int num=900101;
-		int rev=0;
+		int num=8782;
 		while (num!=0) {
 			int digit=num%10;
-			rev=rev*10+digit;
+			if (digit%2==0) {
+				System.out.println(digit);
+			}
 			num/=10;
 		}
-		System.out.println(rev);
 	}
 
 }
