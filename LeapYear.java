@@ -1,16 +1,13 @@
-import java.util.Scanner;
-class LeapYear 
-{
-	public static void main(String[] args) 
-	{
-		Scanner cs=new Scanner(System.in);
-		System.out.println("Enter the Year");
-		int year = cs.nextInt();
-		if ((year%4==0 && year%400==0)&&(year%4==0 && year!=100))
-		{
-			System.out.println(year+" is a leap year");
-		}else{
-			System.out.println(year+" is not a leap year");
+package Basics;
+
+public class LeapYear {
+	public static void main(String[] args) {
+		int year = 4000;
+		boolean isLeap=(year%4==0&&year%100!=0)||(year%400==0);
+		if (isLeap) {
+			System.out.println("Yes");
+		}else {
+			System.out.println("NO");
 		}
 	}
 }
