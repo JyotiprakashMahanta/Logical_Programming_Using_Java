@@ -1,0 +1,21 @@
+public String altPairs(String str) {
+//   String res="";
+// if(str.length()!=0){
+//   res+=str.charAt(0);
+//   for(int i=0;i<str.length();i++){
+//     if(i==1||i==4||i==5||i==8||i==9||i==12||i==13){
+//       res+=str.charAt(i);
+//     }
+//   }
+//   return res;
+// }
+// return str;
+  String res="";
+  for(int i=0;i<str.length();i+=4){
+    res+=str.charAt(i);
+    if(i+1<str.length()){
+      res+=str.charAt(i+1);
+    }
+  }
+  return res;
+}
