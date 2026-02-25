@@ -1,6 +1,7 @@
 public boolean noTriples(int[] nums) {
   for(int i=0;i<nums.length-2;i++){
-    if(nums[i]==nums[i+1] && nums[i]==nums[i+2]){
+    int fisrt=nums[i];
+    if(first==nums[i+1] && first==nums[i+2]){
       return false;
     }
   }
