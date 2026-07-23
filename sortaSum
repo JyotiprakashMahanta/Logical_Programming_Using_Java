@@ -1,0 +1,13 @@
+public int sortaSum(int a, int b) {
+  
+  //-----------------myself-1----------
+  // int res=a+b;
+  // if(res>=10 && res<=19){
+  //   return 20;
+  // }
+  // return res;
+  
+  //---------------try-2----------
+  return a+b>=10 && a+b<=20?20:a+b;
+  
+}
