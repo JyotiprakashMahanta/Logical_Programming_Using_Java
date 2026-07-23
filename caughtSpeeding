@@ -1,0 +1,43 @@
+public int caughtSpeeding(int speed, boolean isBirthday) {
+  // --------------------step-1(own)----------------
+  // if(!isBirthday){
+  //   if(speed<=60){
+  //     return 0;
+  //   }else if(speed>60 && speed<=80){
+  //     return 1;
+  //   }else{
+  //     return 2;
+  //   }
+  // }else{
+  //   if(speed<=65){
+  //     return 0;
+  //   }else if(speed>65 && speed<=85){
+  //     return 1;
+  //   }else{
+  //     return 2;
+  //   }
+  // }
+  // -----------------step-2------------
+  // int actualSpeed=isBirthday?5:0;
+  
+  // if(speed<=60+actualSpeed){
+  //   return 0;
+  // }else if(speed<=80+actualSpeed){
+  //   return 1;
+  // }else{
+  //   return 2;
+  // }
+  
+  // step-3
+  
+  if(isBirthday){
+    speed-=5;
+  }
+  if(speed<=60){
+    return 0;
+  }else if(speed<=80){
+    return 1;
+  }else{
+    return 2;
+  }
+}
