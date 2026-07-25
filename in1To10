@@ -1,0 +1,25 @@
+public boolean in1To10(int n, boolean outsideMode) {
+  // ----------------------self try-------------
+  // boolean isOSM=1>=n||10<=n;
+  // boolean isISM=1<=n&&10>=n;
+  // if(outsideMode){
+  //   if(isOSM){
+  //     return true;
+  //   }else{
+  //     return false;
+  //   }
+  // }else{
+  //   if(isISM){
+  //     return true;
+  //   }else{
+  //     return false;
+  //   }
+  // }
+
+
+  if(outsideMode){
+    return 1>=n || 10<=n;
+  }else{
+    return 1<=n && 10>=n;
+  }
+}
