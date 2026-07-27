@@ -1,0 +1,5 @@
+public boolean less20(int n) {
+  return n%20==(20-1)||n%20==(20-2);  //self try
+  // int remainder = n%20;
+  // return remainder==19 || remainder==18;
+}
