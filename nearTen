@@ -1,0 +1,7 @@
+public boolean nearTen(int num) {
+  // ------------------my self ----------------
+  // return num%10==0 || num%10==1 || num%10==2 || num%10==8 || num%10==9;
+  int reminder=num%10;
+  // return reminder==0||reminder==1||reminder==2||reminder==8||reminder==9;
+  return reminder<=2 || reminder>=8;
+}
