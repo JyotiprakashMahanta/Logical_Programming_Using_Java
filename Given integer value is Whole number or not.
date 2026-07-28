@@ -1,0 +1,7 @@
+class Whole{
+	public static void main(String args[]){
+	int i=9;
+	String result=(i==(int)i? (i+" is a Whole number"):(i+" is not a Whole 	number"));
+	System.out.println(result);
+	}
+}
