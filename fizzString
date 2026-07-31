@@ -1,0 +1,27 @@
+public String fizzString(String str) {
+  
+  // --------------my self---------------
+  // if(str.charAt(0)=='f' && str.charAt(str.length()-1)=='b'){
+  //   return "FizzBuzz";
+  // }
+  // if(str.charAt(0)=='f'){
+  //   return "Fizz";
+  // }
+  // if(str.charAt(str.length()-1)=='b'){
+  //   return "Buzz";
+  // }
+  // return str;
+  
+  char first=str.charAt(0);
+  char last=str.charAt(str.length()-1);
+  if (first=='f' && last=='b') {
+    return "FizzBuzz";
+  }
+  if(first=='f') {
+    return "Fizz";
+  }
+  if(last=='b') {
+    return "Buzz";
+  }
+  return str;
+}
