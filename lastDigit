@@ -1,0 +1,8 @@
+public boolean lastDigit(int a, int b, int c) {
+  int remainderOfA = a%10;
+  int remainderOfB = b%10;
+  int remainderOfC = c%10;
+  return remainderOfA == remainderOfB || 
+         remainderOfB == remainderOfC || 
+         remainderOfC == remainderOfA;
+}
