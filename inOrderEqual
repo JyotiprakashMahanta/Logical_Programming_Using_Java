@@ -1,0 +1,11 @@
+public boolean inOrderEqual(int a, int b, int c, boolean equalOk) {
+  //-----------------my self------------
+  if (equalOk){
+    return a <= b && b <= c;
+  }
+  return a < b && b < c;
+  
+  // return equalOk ? a<=b && b<=c : a<b && b<c;
+  
+  
+}
