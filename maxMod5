@@ -1,0 +1,17 @@
+public int maxMod5(int a, int b) {
+  //---------------- self try --------------
+  // if(a == b){
+  //   return 0;
+  // }
+  // if(a % 5 == b % 5){
+  //   return a > b ? b : a;
+  // }
+  // return a > b ? a : b;
+  if(a == b){
+    return 0;
+  }
+  if(a % 5 == b % 5){
+    return Math.min(a,b);
+  }
+  return Math.max(a,b);
+}
