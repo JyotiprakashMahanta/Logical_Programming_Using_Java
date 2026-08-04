@@ -1,0 +1,13 @@
+public int blueTicket(int a, int b, int c) {
+  int sumOfAB= a + b;
+  int sumOfBC= b + c;
+  int sumOfAC= a + c;
+ 
+  if(sumOfAB == 10 || sumOfBC == 10 || sumOfAC == 10){
+    return 10;
+  }
+   if(sumOfAB == sumOfBC+10 || sumOfAB == sumOfAC+10  ){
+    return 5;
+  }
+  return 0;
+}
