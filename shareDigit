@@ -1,0 +1,10 @@
+public boolean shareDigit(int a, int b) {
+  // self try
+  // return a%10==b%10 || a/10==b%10 || b/10==a%10 || b/10==a/10;
+  
+  int aOne = a%10;
+  int aTen = a/10;
+  int bOne = b%10;
+  int bTen = b/10;
+  return aTen == bTen || aOne == bTen || aTen == bOne || aOne == bOne ;
+}
