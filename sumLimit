@@ -1,0 +1,36 @@
+public int sumLimit(int a, int b) {
+  
+  //-------------------------- self try --------------
+  
+  // int sum = a + b;int keepSum = sum;int keepA = a;
+  // int digitOfA=0;
+  // int digitOfSum=0;
+  // while(a>0){
+  //   digitOfA++;
+  //   a = a / 10;
+  // }
+  // while(sum>0){
+  //   digitOfSum++;
+  //   sum = sum / 10;
+  // }
+  // if(digitOfA<digitOfSum){
+  //   return keepA;
+  // }
+  // return keepSum;
+  int sum = a + b;
+  int originalA = a;
+  int originalSum = sum;
+  
+  int digitA = 0;
+  do{
+    digitA++;a/=10;
+  }while(a>0);
+  
+  int digitSum = 0; 
+  do{
+    digitSum++;
+    sum/=10;
+  }while(sum>0);
+  
+  return digitA == digitSum ?originalSum:originalA;
+}
