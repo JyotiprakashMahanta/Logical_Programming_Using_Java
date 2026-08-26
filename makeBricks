@@ -1,10 +1,6 @@
 public boolean makeBricks(int small, int big, int goal) {
-   if(big * 5 <= goal){
-    int rem = goal - (big * 5);
-    return small >= rem;
-  }else{
-    int bigBricks=Math.min(big,goal/5);
-    int rem = goal - (bigBricks * 5);
-    return small >= rem;
-  }
+    int useBig = Math.min(big, goal / 5);
+    int remaining = goal - useBig * 5;
+
+    return small >= remaining;
 }
