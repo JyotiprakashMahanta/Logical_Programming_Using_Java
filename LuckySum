@@ -1,0 +1,47 @@
+self try-------------
+package WarmUp;
+
+import java.util.Scanner;
+
+/**
+ * 
+Given 3 int values, a b c, return their sum. However, if one of the values is 13 then it does not count towards the sum and values to its right do not count. So for example, if b is 13, then both b and c do not count.
+
+
+luckySum(1, 2, 3) → 6
+luckySum(1, 2, 13) → 3
+luckySum(1, 13, 3) → 1
+ * */
+public class LuckySum {
+	public static void main(String[] args) {
+		Scanner scanner=new Scanner(System.in);
+		System.out.println("Enter 3 number");
+		int a = scanner.nextInt();
+		int b = scanner.nextInt();
+		int c = scanner.nextInt();
+		if(a==13) {
+			System.out.println(0);return;
+		}
+		if(b==13) {
+			System.out.println(a);return;
+		}
+		if(c==13) {
+			System.out.println(a+b);return;
+		}
+		System.out.println(a+b+c);
+		scanner.close();
+	}
+}
+-----
+public int luckySum(int a, int b, int c) {
+  if(a==13){
+    return 0;
+  }
+  if(b==13){
+    return a;
+  }
+  if(c==13){
+    return a+b;
+  }
+  return a+b+c;
+}
