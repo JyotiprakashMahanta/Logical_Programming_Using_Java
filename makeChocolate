@@ -1,0 +1,8 @@
+public int makeChocolate(int small, int big, int goal) {
+  int needBig=Math.min(big,goal/5);
+  int needSmall=goal-needBig*5;
+  if(small>=needSmall){
+    return needSmall;  
+  }
+  return -1;
+}
