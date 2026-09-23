@@ -1,0 +1,11 @@
+public int sum13(int[] nums) {
+    int count=0;
+    for(int n=0;n<nums.length;n++){
+      if(nums[n]==13){
+        n++;
+      }else{
+        count+=nums[n];
+      }
+    }
+    return count;
+}
