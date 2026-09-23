@@ -1,0 +1,25 @@
+public boolean endOther(String a, String b) {
+  //self try and working 100%
+  // String lastPart="";
+  // if(a.length()>b.length()){
+  //   lastPart=a.substring(a.length()-b.length()).toLowerCase();
+  //   return lastPart.equals(b.toLowerCase());
+  // }
+  // else{
+  //   lastPart=b.substring(b.length()-a.length()).toLowerCase();
+  //   return lastPart.equals(a.toLowerCase());
+  // }
+  
+  // learn and try
+  // if(b.length()>a.length()){
+  //   return b.substring(b.length()-a.length()).equalsIgnoreCase(a);
+  // }else{
+  //   return a.substring(a.length()-b.length()).equalsIgnoreCase(b);
+  // }
+  
+  // learn and try -2
+  
+  String s1=a.toLowerCase();
+  String s2=b.toLowerCase();
+  return s1.endsWith(s2) || s2.endsWith(s1);
+}
