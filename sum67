@@ -1,0 +1,13 @@
+public int sum67(int[] nums) {
+  int sum=0;
+    for(int n=0;n<nums.length;n++){
+      if(nums[n]==6){
+        while(nums[n]!=7){
+          n++;
+        }
+      }else{
+        sum+=nums[n];
+      }
+    }
+    return sum;
+}
