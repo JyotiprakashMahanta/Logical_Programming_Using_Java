@@ -1,0 +1,8 @@
+public boolean has22(int[] nums) {
+  for(int n=0;n<nums.length-1;n++){
+    if(nums[n]==2 && nums[n+1]==2){
+      return true;
+    }
+  }
+  return false;
+}
